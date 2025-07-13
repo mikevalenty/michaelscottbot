@@ -14,7 +14,7 @@ async def on_message(message):
 
     try:
         response = ollama.chat(
-            model='michaelscott',
+            model='michaelscott:twss',
             messages=[
                 {
                     'role': 'user',
