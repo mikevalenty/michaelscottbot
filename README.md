@@ -14,7 +14,7 @@ A Discord bot that responds with "That's what she said" to classic setups, in th
 
 3.  **Create the Ollama model:**
     ```bash
-    ollama create michaelscott:twss -f Modelfile
+    ollama create michaelscott -f Modelfile
     ```
 
 4.  **Set your environment variable:**
