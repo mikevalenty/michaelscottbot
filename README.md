@@ -1,6 +1,6 @@
 # MichaelScottBot
 
-A Discord bot that responds with "That's what she said" to classic setups, in the style of Michael Scott from The Office.
+A Discord bot that replies with "That's what she said", in the style of Michael Scott from The Office. Uses gemma3:12b and ollama to classify messages as classic twss setups. Pretty much everything here was a one-shot from Gemini CLI running Gemini 2.5 pro.
 
 ## Setup
 
