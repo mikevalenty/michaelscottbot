@@ -6,6 +6,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 client = discord.Client(intents=intents)
+ollama_client = ollama.AsyncClient()
 
 @client.event
 async def on_message(message):
@@ -13,7 +14,7 @@ async def on_message(message):
         return
 
     try:
-        response = ollama.chat(
+        response = await ollama_client.chat(
             model='michaelscott:twss',
             messages=[
                 {
