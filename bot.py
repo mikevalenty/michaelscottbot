@@ -31,4 +31,4 @@ async def on_message(message):
         print(f"Error processing message: {e}")
 
 
-client.run(os.getenv('DISCORD_TOKEN'))
+client.run(os.getenv('MICHAELSCOTTBOT_DISCORD_TOKEN'))

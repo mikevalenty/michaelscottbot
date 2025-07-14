@@ -18,10 +18,10 @@ A Discord bot that replies with "That's what she said", in the style of Michael 
     ```
 
 4.  **Set your environment variable:**
-    Set the `DISCORD_TOKEN` environment variable to your Discord bot token.
+    Set the `MICHAELSCOTTBOT_DISCORD_TOKEN` environment variable to your Discord bot token.
     For example, in bash:
     ```bash
-    export DISCORD_TOKEN=your_discord_token_here
+    export MICHAELSCOTTBOT_DISCORD_TOKEN=your_discord_token_here
     ```
     Replace `your_discord_token_here` with your actual Discord bot token.
 
