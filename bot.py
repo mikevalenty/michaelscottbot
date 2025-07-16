@@ -14,18 +14,14 @@ async def on_message(message):
         return
 
     try:
-        response = await ollama_client.chat(
+        response = await ollama_client.generate(
             model='michaelscott:twss',
-            messages=[
-                {
-                    'role': 'user',
-                    'content': message.content,
-                },
-            ],
+            prompt=f"<message>{message.content}</message>",
         )
-        answer = response['message']['content'].strip()
+        answer = response['response'].strip()
         last_word = answer.split()[-1].lower().strip('.,!?')
         if last_word == 'yes':
+            print(answer)
             await message.reply("That's what she said")
     except Exception as e:
         print(f"Error processing message: {e}")
